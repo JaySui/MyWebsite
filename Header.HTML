@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Jay Results</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/Style.css"/>
+    <link rel="stylesheet" href="Style/Breakpoints.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+     <header class="sticky-top blur-header" style="">
+        <div class="header-inner ">
+                <div class="logo d-flex align-items-center">
+                    <img src="Images/Logo v8.png" style="width:36px; height:36px;" alt="Logo">
+                    <span class="fw-bold ms-2 no-break-line" style="font-size: 15px;">Jay Results</span>
+                </div>
+
+                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </button>
+
+                <nav id="nav-links" class="nav-links" style="font-size: 15px;">
+                    <a class="nav-link text-dark" href="MyWeb.SHTML">Home</a>
+                    <a class="nav-link text-dark" href="Newsletter.SHTML">Newsletter</a>
+                    <a class="nav-link text-dark" href="Blog.SHTML">Blog</a>
+                    <a class="nav-link text-dark" href="Book.SHTML"><button class="no-break-line">Book a call</button></a>
+                </nav>
+        </div>
+    </header>
+
+
+
+<!-- Scripts -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+    hamburger.setAttribute('aria-expanded', !expanded);
+    navLinks.classList.toggle('show');
+    });
+  </script>
+  <script>
+    document.querySelectorAll(".faq-question").forEach(question => {
+        question.addEventListener("click", () => {
+            const li = question.parentElement;
+            li.classList.toggle("active");
+        });
+    });
+</script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".fade-slide-up").forEach(el => {
+      el.classList.add("show");
+    });
+  });
+</script>
+
+</body>
+</html>

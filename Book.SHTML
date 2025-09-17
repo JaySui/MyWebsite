@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Booking</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/Style.css"/>
+    <link rel="stylesheet" href="Style/Breakpoints.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body style="background-color: rgb(240, 235, 229);">
+
+<!-- Header Section -->
+
+    <header class="sticky-top blur-header" style="">
+        <div class="header-inner ">
+                <div class="logo d-flex align-items-center">
+                    <img src="Images/Logo v8.png" style="width:36px; height:36px;" alt="Logo">
+                    <span class="fw-bold ms-2 no-break-line" style="font-size: 15px;">Jay Results</span>
+                </div>
+
+                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </button>
+
+                <nav id="nav-links" class="nav-links" style="font-size: 15px;">
+                    <a class="nav-link text-dark" href="MyWeb.SHTML">Home</a>
+                    <a class="nav-link text-dark" href="Newsletter.SHTML">Newsletter</a>
+                    <a class="nav-link text-dark" href="Blog.SHTML">Blog</a>
+                    <a class="nav-link text-dark" href="Book.SHTML"><button class="no-break-line">Book a call</button></a>
+                </nav>
+        </div>
+    </header>
+
+<!-- Booking Section -->
+
+<div class="container booking-section ">
+    <div class="row ">
+        <div class="col-md-6 fade-slide-up">
+             <div class="mb-4">
+                <span class="small-box">
+                    Book a call
+                </span>
+             </div>
+           
+            <h1>Let's <br> Make <br> Money</h1>
+            <p>Fill out the form below and we will contact you within 48 hours to find out if we can help you.
+            <br> No costs, no obligations, no annoying sales pitch. Guaranteed.</p>
+             
+        </div>
+
+
+
+    <div class="col-md-6 form fade-slide-up">
+        <form action="https://formsubmit.co/novherjremando@gmail.com" method="POST"
+        class="still " style="flex-direction: column; gap: 40px; margin-left: auto; margin-right: auto;">
+        
+         <!-- Redirect after submit -->
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+        <!-- Honeypot for spam protection -->
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- Disable Captcha (optional, FormSubmit uses reCAPTCHA by default) -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Full Name -->
+        <input type="text" name="full_name" placeholder="Full Name" required 
+            class="book-form ">
+
+        <!-- Business Email -->
+        <input type="email" name="business_email" placeholder="Business Email" required 
+            class="book-form">
+
+        <!-- Phone Number -->
+        <div style="display: flex; gap: 10px; width: 100%;">
+        <input type="text" name="country_code" placeholder="+xxx" required 
+                class="book-form" style="width: 90px;">
+        <input type="tel" name="phone_number" placeholder="Phone Number" required 
+                class="book-form">
+        </div>
+
+        <!-- Website / Company Name -->
+        <input type="text" name="website_companyname" placeholder="Website and Company Name" required 
+            class="book-form">
+
+        <!-- Marketing Problem -->
+        <textarea rows="4" name="problem" placeholder="What happens if you don't have a conversion based website? *" required
+                class="book-form" style="font-size: 20px; font-weight: 600; color: black;"></textarea>
+
+        <!-- Timeline -->
+        <label style="Font-size: 20px; font-weight: 500; display:block; margin-bottom:10px;">
+        By when do you want to solve this problem? *
+        </label>
+
+        <div class="radio-group">
+        <label class="radio-option">
+            <input type="radio" name="timeline" value="today" required>
+            Today
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="timeline" value="tomorrow">
+            Tomorrow
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="timeline" value="weeks">
+            In a few weeks
+        </label>
+    </div>
+
+
+    <!-- Submit -->
+    <button type="submit" style="width: 100%; height: 50px;">Submit</button>
+  </form>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- FAQ Section -->
+
+    <div class="container faq-box" style="margin-top: 60px; margin-bottom: 160px;">
+        
+        <div class="faq-symbol position-absolute top-0 translate-middle" style="left: 85%;">
+            <i class="bi bi-bookmark-star-fill" style="font-size: 40px;"></i>
+        </div>
+
+        <div class="mb-5" style="padding: 40px 20px;">
+            <span class="small-box" style="align-items: start;">
+                Questions
+            </span>
+                <h4 class="mt-4 mb-0">
+                    Frequently
+                </h4>
+                <h4 class="mt-0">
+                    Asked <span class="cursive">Questions. </span>
+                </h4>
+        </div>
+        <ul style="padding-left: 30px; padding-right:30px;">
+            <li>
+                <div class="faq-question">
+                    <h5>I already have a website, why would <br> I need a new one?</h5>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Most websites look nice but don’t convert. We focus on design, structure, and messaging that guide visitors toward action — turning them into paying customers.</p>
+                </div>
+            </li>
+            <li>
+                <div class="faq-question">
+                    <h5>Can’t I just use a template or <br> DIY website builder?</h5>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A website is highly recommended as it serves as the foundation for your online marketing efforts.</p>
+                </div>
+            </li>
+            <li>
+                <div class="faq-question">
+                    <h5>How long does it take to build the site?</h5>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Depends on what we need, but usually around 2 to 3 weeks for most.</p>
+                </div>
+            </li>
+            <li>
+                <div class="faq-question">
+                    <h5>What about seo?</h5>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>SEO makes you visible in Google searches and builds long-term credibility. However, competitors who pay for Google Ads can appear above you in search results. The best strategy is often to combine both: SEO for sustainable growth, and ads for immediate visibility.</p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="faq-question">
+                    <h5>Will my website work on mobile?</h5>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. Every site we build is fully responsive, meaning it looks great and converts visitors on desktop, tablet, and mobile.</p>
+                </div>
+            </li>
+            <li>
+                <div class="faq-question">
+                    <h5>Do you also handle content and copywriting?</h5>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we can help craft the headlines and messaging that make visitors take action. If you already have content, we’ll refine it for maximum impact.</p>
+                </div>
+            </li>
+            <li>
+                <div class="faq-question">
+                    <h5>Is this a one time payment or subscription based?</h5>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Both options are available. If you prefer a one-time payment, we can build your website and hand it over fully. If you’d rather have ongoing support (like updates, maintenance, or hosting), we also offer subscription plans. It all depends on what fits your needs best.</p>
+                </div>
+            </li>
+            <li>
+                <div class="faq-question">
+                    <h5>What if my website gets hacked?</h5>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We build with security best practices to reduce risks. If you choose our subscription plan, we also provide ongoing updates and monitoring to keep your site safe.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+<!-- Footer -->
+
+    <div class="container text-start" style="width: 1160px;">
+
+        <div class="feet row justify-content-center mt-5 mb-5">
+            <div class="col-5 footer">
+                <div class="logo d-flex align-items-center mb-4">
+                    <img src="Images/Logo v8.png" style="width:36px; height:36px;" alt="Logo">
+                    <span class="fw-bold ms-2 no-break-line" style="font-size: 15px;">Jay Results</span>
+                </div>
+                 <ul class="list-unstyled">
+                  <li style="text-align: start;">
+                    <h2 class="no-break-line">A Website that drives</h2>
+                    <h2 class="no-break-line"><span class="cursive me-2">real </span> results</h2>
+                </li>
+                <li class="mt-3" style="text-align: start;"><p style="font-size: 16px;">Built for businesses that wants to thrive.</p></li>
+            </ul>
+            </div>
+    
+            
+            <div class="col">
+                <ul class="list-unstyled foot d-flex flex-column gap-3">
+                    <li><p style="color: black;">Connect</p></li>
+                    <li><a href="Book.SHTML" class="text-dark"><p>Book a call</p></a></li>
+                    <li><a href="#" class="text-dark"><p>Instagram</p></a></li>
+                    <li><a href="#" class="text-dark"><p>Linkedln</p></a></li>
+                    <li><a href="#" class="text-dark"><p>Twitter</p></a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <ul class="list-unstyled foot d-flex flex-column gap-3">
+                    <li><p style="color: black;">Navigate</p></li>
+                    <li><a href="MyWeb.SHTML" class="text-dark"><p>Home</p></a></li>
+                    <li><a href="Newsletter.SHTML" class="text-dark"><p>Newsletter</p></a></li>
+                    <li><a href="Blog.SHTML" class="text-dark"><p>Blog</p></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+    hamburger.setAttribute('aria-expanded', !expanded);
+    navLinks.classList.toggle('show');
+    });
+  </script>
+  <script>
+    document.querySelectorAll(".faq-question").forEach(question => {
+        question.addEventListener("click", () => {
+            const li = question.parentElement;
+            li.classList.toggle("active");
+        });
+    });
+</script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".fade-slide-up").forEach(el => {
+      el.classList.add("show");
+    });
+  });
+</script>
+
+</body>
+</html>

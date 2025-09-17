@@ -1,0 +1,543 @@
+/* starting state */
+.fade-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* active state */
+.fade-slide-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* make the immediate children of the .container behave as two items with a fixed gap */
+
+ .header-inner {
+  display: flex;
+  justify-content: center;  /* center the pair as a block */
+  align-items: center;
+  gap: 680px;                /* <-- fixed gap between logo and nav */
+  padding: 20px 20px;
+}  
+
+/* keep small styling consistent */
+.logo img { height: 40px; border-radius: 10px; }
+.nav-links { gap: 16px; } 
+
+.still {
+  display: flex;
+  justify-content: center;  /* center the pair as a block */
+  align-items: center;
+}
+
+.blur-header {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1030;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.page-wrapper {
+ 
+} 
+
+button {
+  background-color: #000000; 
+  color: #ffffff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 15px; 
+  cursor: pointer;
+}
+
+.no-break-line {
+    white-space: nowrap;
+    min-width: fit-content; /* Or set a px value like 100px */
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.special-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers .box-2 horizontally */
+}
+
+.special-col h4 {
+  text-align: center;
+}
+
+.special-col .box-2 {
+  width: fit-content; /* shrink to fit its contents */
+}
+
+/* Comparison Section */
+
+.compare {
+
+}
+
+.compare h1{
+  font-size: 60px;
+
+}
+
+/* FAQ */
+
+.faq-box {
+  background-color: rgb(247, 244, 239);
+  width: 600px;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 240px;
+  position: relative;
+  background-color: ;
+  padding-bottom: 15px;
+}
+
+.faq-symbol {
+    background: white; /* mask the border behind */
+    padding: 10px 20px;
+    border-radius: 20%;
+}
+
+
+.faq-box h4 {
+  text-align: start;
+  font-size: 38px;
+  color: rgb(0, 0, 0);
+}
+
+.faq-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .faq-box li {
+        background-color: #f1ede9;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .faq-question h5 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease;
+    }
+
+    .faq-answer p {
+        margin: 10px 0 0;
+        font-size: 16px;
+    }
+
+    .faq-box li.active .faq-answer {
+        max-height: 500px; /* big enough to fit any answer */
+    }
+
+    .faq-toggle {
+        font-size: 20px;
+        transition: transform 0.3s;
+    }
+
+    .faq-box li.active .faq-toggle {
+        transform: rotate(45deg); /* turns plus into an X */
+    }
+    
+/* Booking CTA */
+
+.cta-box {
+  background-color: rgb(247, 244, 239);
+  width: 1140px;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 240px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.cta-box h1 {
+  font-size: 55px;
+  font-weight: 450;
+}
+
+.cta-symbol {
+  background-color: rgb(24, 24, 24);
+  color: rgb(243, 239, 231);
+  border-radius: 20px;
+  padding: 10px 21px;
+}
+
+/* Footer */
+
+.feet {
+  
+}
+
+.foot {
+ 
+}
+
+.foot p {
+  font-size: 14px;
+}
+
+.foot a{
+   text-decoration: none;
+}
+
+.footer {
+  
+}
+
+.footer h2 {
+  font-size: 34px;
+  color: rgb(0, 0, 0);
+
+}
+
+
+/* Fonts */
+
+.cursive {
+  font-family:'Brush Script MT', cursive;
+  font-size: 70px;
+  font-weight: 300;
+}
+
+h1, h2, h3, p, span, a, li {
+  letter-spacing: 0;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #000;
+  word-break: normal;
+  overflow-wrap: normal;
+  white-space: normal;
+  hyphens: none;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: rgb(66, 66, 66);
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: medium;
+  color: rgb(134, 134, 134);
+  line-height: 1.6;
+} 
+
+.head-p {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(130, 130, 130);
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.symb {
+  background-color: rgb(255, 250, 248);
+  border-radius: 20px;
+  font-size: 40px;
+  padding: 29px 33px;
+}
+
+/* idk what to label anymore bro */
+
+.box {
+  background-color: rgb(247, 244, 239);
+  width: 350px; 
+  height: 400px;                /* let height adjust naturally */
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;     /* so text aligns left nicely */
+  padding: 16px;
+}
+
+.image-wrapper {
+  width: 100%;                 /* match the box width */
+  height: 200px;               /* fixed image height */
+  overflow: hidden;            /* crop the image */
+  border-radius: 8px;          /* optional */
+  margin-bottom: 16px;
+}
+
+.serv-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* fill the frame without distortion */
+  object-position: center;
+  display: block;
+}
+
+
+
+.box-2 {
+  background-color: rgb(247, 244, 239);
+  max-width: 400px;
+  min-width: 400px;
+
+  
+}
+
+.box-3 {
+  width: 380px;
+
+
+}
+
+.serv-img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  object-fit: cover;
+  overflow: hidden;
+  display: block;
+ 
+}
+
+
+.small-box {
+  background-color: #2a211613; 
+  color: rgb(49, 49, 49); 
+  padding: 8px 20px; 
+  border-radius: 9px;
+  font-size: large;
+  font-weight: 500;
+  white-space: nowrap;
+  min-width: fit-content; /* Or set a px value like 100px */
+}
+
+.option {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.option li {
+  margin-bottom: 15px;
+}
+
+/* OMF GOSH WTF IS THIS?!?!?! */
+
+
+
+.fixed-video {
+  width: 100%;
+  max-width: 512px;
+  min-width: 350px; /* won't shrink past this */
+  height: auto;
+}
+
+.placeholder-hero {
+  text-align: center;
+  margin: auto;
+  padding-top: 90px; 
+  padding-left:100px; 
+  padding-right:100px;
+  min-width: 900px;
+  max-width: 900px;
+
+}
+
+.hero {
+  display: flex;
+  align-items: flex-start;
+  min-width: 1130px;
+  max-width: 1130px;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  white-space: nowrap; /* Prevent internal breaks on large screens */
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  white-space: normal; /* paragraphs can wrap */
+}
+
+.hero-video video {
+  width: 512px;
+  height: 288px;
+  object-fit: cover;
+  align-items:center ;
+  margin-left: 100px;
+}
+
+/* Breakpoints */
+
+.hamburger {
+  display: none !important; /* hide by default */
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block !important;
+  width: 25px;
+  height: 3px;
+  background-color: #313131;
+  border-radius: 2px;
+}
+
+/* Breakpoints sections */
+
+.break-here::before {
+  content: " ";
+}
+
+
+/* End of CSS file FOR MYWEB */
+
+/* Booking page CSS below */
+
+.booking-section {
+  max-width: 1300px;
+  min-width: 1300px;       /* fixed width */
+  margin: 0 auto;      /* centered on page */
+  display: flex;
+}
+
+.booking-section .col-md-6 {
+  padding-top: 100px; 
+  padding-bottom: 140px;
+  padding-right: 100px;
+  padding-left: 95px;
+}
+
+.booking-section .row {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.booking-section h1{
+  font-weight: 600;
+  font-size: 100px;
+  padding-bottom:5px;
+}
+
+.booking-section p{
+  font-size: 24px;
+  padding-bottom: 25px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.form {
+  padding-top: 120px !important; 
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+}
+
+.form-head {
+  padding-top: 300px; 
+  padding-bottom: 100px;
+}
+
+.book-form {
+  padding: 12px; 
+
+  border: none;                  /* remove full border */
+  border-bottom: 2px solid #686868; /* only underline */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+input.book-form::placeholder {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.radio-group {
+  display: flex;
+  gap: 30px;       /* spacing between options */
+  align-items: center;
+  
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  
+}
+
+/* hide default browser radio */
+.radio-option input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  margin-right: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* checked state */
+.radio-option input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
