@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8" />
+    <title>Jay Results</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/Style.css"/>
+    <link rel="stylesheet" href="Style/Breakpoints.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   
+</head>
+<body style="background-color: rgb(240, 235, 229);">
+
+<div id="header"></div>
+
+<main>
+  
+  <div class="container text-center my-5 py-5 fade-slide-up">
+    <h1>
+      Hold on, we're working on it.
+    </h1>
+  </div>
+
+</main>
+
+<div id="footer"></div>
+
+<script>
+  // Load Header
+  fetch("Header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+
+      // Burger menu logic (runs only after header is loaded)
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.getElementById('nav-links');
+
+      hamburger.addEventListener('click', () => {
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+        hamburger.setAttribute('aria-expanded', !expanded);
+        navLinks.classList.toggle('show');
+      });
+    });
+
+  // Load Footer
+  fetch("Footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+
+      // Any footer-specific scripts can go here:
+      document.querySelectorAll(".faq-question").forEach(question => {
+        question.addEventListener("click", () => {
+          const li = question.parentElement;
+          li.classList.toggle("active");
+        });
+      });
+    });
+
+  // Page-wide animations
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".fade-slide-up").forEach(el => {
+      el.classList.add("show");
+    });
+  });
+</script>
+
+
+
+
+<!-- Scripts -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+    hamburger.setAttribute('aria-expanded', !expanded);
+    navLinks.classList.toggle('show');
+    });
+  </script>
+  <script>
+    document.querySelectorAll(".faq-question").forEach(question => {
+        question.addEventListener("click", () => {
+            const li = question.parentElement;
+            li.classList.toggle("active");
+        });
+    });
+</script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".fade-slide-up").forEach(el => {
+      el.classList.add("show");
+    });
+  });
+</script>
+    
+</body>
+</html>
